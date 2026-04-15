@@ -21,7 +21,7 @@ public class CalculatorController {
     @GetMapping("/sumar")
     public Map<String, Object> sumar(@RequestParam double a, @RequestParam double b) {
         return Map.of(
-                "operacion", "sumar",
+                "operacion8", "sumar",
                 "a", a,
                 "b", b,
                 "resultado", calculatorService.sumar(a, b)
@@ -31,7 +31,7 @@ public class CalculatorController {
     @GetMapping("/restar")
     public Map<String, Object> restar(@RequestParam double a, @RequestParam double b) {
         return Map.of(
-                "operacion", "restar",
+                "operacion8", "restar",
                 "a", a,
                 "b", b,
                 "resultado", calculatorService.restar(a, b)
@@ -41,7 +41,7 @@ public class CalculatorController {
     @GetMapping("/multiplicar")
     public Map<String, Object> multiplicar(@RequestParam double a, @RequestParam double b) {
         return Map.of(
-                "operacion", "multiplicar",
+                "operacion8", "multiplicar",
                 "a", a,
                 "b", b,
                 "resultado", calculatorService.multiplicar(a, b)
@@ -51,7 +51,7 @@ public class CalculatorController {
     @GetMapping("/dividir")
     public Map<String, Object> dividir(@RequestParam double a, @RequestParam double b) {
         return Map.of(
-                "operacion", "dividir",
+                "operacion8", "dividir",
                 "a", a,
                 "b", b,
                 "resultado", calculatorService.dividir(a, b)
