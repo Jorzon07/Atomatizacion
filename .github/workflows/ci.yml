@@ -20,6 +20,7 @@ jobs:
           cache: maven
 
       - name: Compilar proyecto
+        working-directory: calculator
         run: mvn clean package -DskipTests
 
       - name: Ejecutar app
